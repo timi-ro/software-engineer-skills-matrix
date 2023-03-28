@@ -196,9 +196,10 @@
               </li>
               <li><span class="highlight underline">الگوهای طراحی (design patterns)</span><br />کسبِ درکِ الگوهای
                 متفاوتی که در پایگاهِ کُد (codebase) استفاده شده است.</li>
-              <li><span class="highlight underline"> معماری نرم‌افزار (software architecture)</span><br />Aware of
-                domain architecture and
-                designs basic functions to avoid code duplication and interface-breaking changes.</li>
+              <li><span class="highlight underline"> معماری نرم‌افزار (software architecture)</span>
+                <br />از معماریِ دامنه آگاه است و توابع را به گونه‌ای طراحی می‌کند که از تکرار کد (code duplication) و
+                تغییرات interface-breaking اجتناب شود.
+              </li>
             </ul>
           </div>
 
@@ -217,9 +218,9 @@
                 را درک کند.
               </li>
               <li>
-                <span class="highlight underline">تست کردن (testing)</span><br />
-                هرم تست (test pyramid) را درک می‌کند، Unit Testها را مطابق آن می‌نویسد (گاهی اوقات با کمک دیگران).
-                Always tests expected edge cases and errors as well as the happy path.
+                <span class="highlight underline">تست کردن (testing)</span><br />هرم تست (test pyramid) را درک می‌کند، و
+                Unit Testها را مطابق آن می‌نویسد (گاهی اوقات با کمک دیگران). همواره حالت‌های پیشبینی شده، خطاها و همچنین
+                حالت‌های معمولی را تست می‌کند.
               </li>
               <li><span class="highlight underline"> بِه‌روش (best practice)</span><br />به وظایف با نگاهِ پیروی از
                 بِه‌روش‌ها برخورد می‌کند. ممکن است برای فهمیدن آنکه کدام استاندارد را دنبال کند، از دیگران کمک بگیرد.
@@ -265,7 +266,7 @@
 
         <div class="left col">
           <span class=title>E2: مهندس سطح 2</span>
-          <p><span class=focus>FOCUS: <br />Within Epic</span></p>
+          <p><span class=focus>تمرکز: <br />درون Epic</span></p>
           <a href="https://tinyurl.com/e360-engineer-ii" target="_blank" class="link underline">انتظارات از این نقش</a>
         </div>
         <div class="middle" id="mid-skills">
@@ -414,14 +415,15 @@
           <a class="show link" id="mid-show" onclick="showExamples('mid')">+ نمایش مثال‌ها</a>
           <a class="hide link" id="mid-hide" onclick="hideExamples('mid')">- پنهان کردن مثال‌ها</a>
           <ul class="hide" id="mid-examples">
-            <li>Prototyped a simple new feature quickly</li>
-            <li>Refactors code when possible - adding tests where they are missing, making code more testable and
-              leaving code better than they found it</li>
-            <li>Requested tests for a PR or found missed cases when acting as a reviewer</li>
-            <li>Troubleshoots using different techniques such as: looking at logs, investigating kuberenetes pods,
-              RabbitMQ queues etc</li>
-            <li>Added instructions in README on the new dev setup</li>
-            <li>Identified an issue in a PR where the ids and email addresses were used in a URL</li>
+            <li>نمونه‌ی اولیه (prototyped) یک ویژگیِ ساده را به سرعت می‌سازد.</li>
+            <li>در صورت امکان کد را ریفکتور می‌کند. یعنی در جایی که تستی جا افتاده است و نوشته نشده است را می‌نویسد، کد
+              را قابل تست‌تر می‌کند و اساسا کُدِ بهتری نسبت به اول بجا می‌گذارد.</li>
+            <li>برای PRهایی که قرار است به عنوان بازنگر (reviewer) باشد، درخواست تست می‌کند (درصورتیکه تست نوشته نشده
+              باشد).</li>
+            <li>برای اشکال‌زدایی از تکنیک‌های متفاوتی استفاده می‌کند، نظیر: نگاه کردن به لاگ‌ها، تجسس در پادهای
+              کوبرنتیز، صف‌های RabbitMQ و... .</li>
+            <li>دستورالعمل‌هایی را در README درصورتِ نیاز قرار می‌دهد.</li>
+
           </ul>
         </div>
 
@@ -432,7 +434,7 @@
 
         <div class="left col">
           <span class=title>E3: مهندس خبره</span>
-          <p><span class=focus>FOCUS: <br />Within Team</span></p>
+          <p><span class=focus>تمرکز: <br />درون تیم</span></p>
           <a href="https://tinyurl.com/e360-engineer-iii" target="_blank" class="link underline">انتظارات از این نقش</a>
         </div>
         <div class="middle" id="senior-skills">
@@ -525,21 +527,18 @@
               </li>
               <li>
                 <span class="highlight underline">تست کردن (testing)</span><br />
-                <span class="highlight">Delivers features</span> with the end-users in mind, understands how the epics
-                in the <span class="highlight">team's context</span> brings value to end-users. Thinks of ease of use
-                for end-users (internal and external, including developers)
+                قابلیت‌ها (features) را با درنظر گرفتنِ دغدغه‌ی کاربران نهایی ارائه می‌دهد. ارزشی که epicها به کاربران
+                نهایی ارائه می‌دهند را درک می‌کند. برای سهولتِ استفاده‌ی کاربران نهایی از سیستم تلاش می‌کند (چه داخلی،
+                چه خارجی و حتا خود توسعه‌دهندگان).
                 <br />
-                Understands their <span class="highlight">Engineering team's testing approach</span>, and uses <span
-                  class="highlight">quality metrics to identify gaps.</span> Works with their team to <span
-                  class="highlight">recommend solutions</span> that are in accordance with accepted testing frameworks
-                and the testing pyramid.
+                روشِ تست‌نویسی معاونتِ فنی را می‌داند و از متریک‌های کیفی برای شناسایی گپ‌ها استفاده می‌کند. به تیم خود
+                راهِ‌حل‌هایی را توصیه می‌کند که مطابق با چهارچوب‌های تست‌کردن پذیرفته‌شده و هرم تست‌کردن است.
               </li>
               <li>
                 <span class="highlight underline"> بِه‌روش (best practice)</span><br />
-                <span class="highlight">Knows which standards to follow and aims for best practice</span> being applied
-                to work <span class="highlight">most</span> of the time. <span class="highlight">Seeks</span> and
-                references guides and known standards as well as <span class="highlight">help others learn about best
-                  practice</span>
+                می‌داند که از کدام استانداردها باید پیروی کند و هدف‌اش اعمالِ بِه‌روش‌ها در کار است. پیگیرِ راهنماها و
+                استانداردهای شناخته‌شده هست و به آن‌ها رجوع می‌کند. همچنین به دیگران در یادگیری بِه‌روش‌ها کمک
+                می‌کند.
               </li>
             </ul>
           </div>
@@ -575,15 +574,15 @@
           <a class="show link" id="senior-show" onclick="showExamples('senior')">+ نمایش مثال‌ها</a>
           <a class="hide link" id="senior-hide" onclick="hideExamples('senior')">- پنهان کردن مثال‌ها</a>
           <ul class="hide" id="senior-examples">
-            <li>Fixes complicated bugs outside of regular domain</li>
-            <li>Helped someone with troubleshooting and identifying a performance problem and resolved this quickly in
-              production</li>
-            <li>Implements complex features with a large product surface area</li>
-            <li>Added instrumentation and tools to measure performance metrics</li>
-            <li>Designed and implemented integration with Third Party with considerations to load, security, error
-              handling and other best practises</li>
-            <li>Created user manuals for a new feature</li>
-            <li>Ensured the GraphQL response for new queries and mutations did not leak sensitive data</li>
+            <li>باگ‌های پیچیده‌ی خارج از حوزه‌ی معمول‌اش را حل می‌کند.</li>
+            <li>با شناسایی و اشکال‌زداییِ مشکل عملکردی به یک نفرِ دیگر کمک می‌کند و همچنین به سرعت آن را در محیط عملیاتی
+              مرتفع می‌کند.</li>
+            <li>ویژگی‌های پیچیده را پیاده‌سازی می‌کند.</li>
+            <li>کُدها و نیازمندی‌های مربوط به جمع آوری متریک‌های عملکردی را اضافه می‌کند.</li>
+            <li>یکپارچی با یک ابزار ثالث را درنظر گرفتن بار، امنیت، مدیریت خطا و به‌روش‌ها طراحی و پیاده‌سازی می‌کند.
+            </li>
+            <li>برای استفاده از یک ویژگیِ جدید دفترچه‌ی راهنما ایجاد می‌کند./li>
+            <li>تضمین می‌کند که استفاده از GraphQL منجر به لو رفتن اطلاعات حساس نمی‌شود.</li>
           </ul>
         </div>
 
@@ -594,7 +593,7 @@
 
         <div class="left col">
           <span class=title>E4: رهبر توسعه</span>
-          <p><span class=focus>FOCUS: <br />Within Team and Stakeholders</span></p>
+          <p><span class=focus>تمرکز: <br />درون تیم و ذی‌نفعان</span></p>
           <a href="https://tinyurl.com/e360-devlead" target="_blank" class="link underline">انتظارات از این نقش</a>
         </div>
         <div class="middle" id="teamlead-skills">
@@ -663,10 +662,9 @@
               </li>
               <li>
                 <span class="highlight underline"> معماری نرم‌افزار (software architecture)</span><br />
-                <span class="highlight">Works with the team</span> to ensure architecture and technical approaches are
-                <span class="highlight">aligned to the broader engineering goals</span>
-                (e.g. scaling or validation mode, continuous deployment etc) and the <span
-                  class="highlight">architectural roadmap</span>
+                با تیم کار می‌کند تا این اطمینان حاصل شود که معماری و رویکردهای فنیِ تیم با اهدافِ مهندسی بزرگ‌تر نظیر
+                مقیاس‌پذیری (scaling)، حالت اعتبارسنجی (validation mode)، دیپلوی مداوم (continuous deployment) و همچنین
+                نقشه‌ی راهِ معماری، مطابق و همسو هستند.
               </li>
             </ul>
           </div>
@@ -692,16 +690,15 @@
               </li>
               <li>
                 <span class="highlight underline">تست کردن (testing)</span><br />
-                <span class="highlight">Drives</span> their team's testing approach, in accordance to Engineering
-                testing strategy, <span class="highlight">always covering happy paths, variances in data, errors and
-                  known edge cases</span> and uses quality metrics to identify gaps. Works with their team to recommend
-                solutions that are in accordance with accepted testing frameworks and the testing pyramid.
+                <span class="highlight">روشِ تست‌نویسیِ تیم را مطابق با استراتژی تست‌نویسی معاونت تهیه می‌کند. همیشه
+                  حالت‌های معمول، واریانس در داده، خطاها، حالت‌های خاص را پوشش می‌دهد و از متریک‌های کیفی برای شناسایی
+                  گپ‌ها استفاده می‌کند. به تیم خود راهِ‌حل‌هایی را توصیه می‌کند که مطابق با چهارچوب‌های تست‌کردن
+                  پذیرفته‌شده و هرم تست‌کردن است.
               </li>
               <li>
                 <span class="highlight underline"> بِه‌روش (best practice)</span><br />
-                <span class="highlight">Guides</span> the team on following standards and aims for best practice in the
-                team's work. Seeks and references guides and known standards and <span class="highlight">coaches</span>
-                others on applying best practice in their work
+                تیم را برای پیروی از استانداردها و اعمالِ بِه‌روش‌ها در کار هدایت می‌کند. پیگیرِ راهنماها و استانداردهای
+                شناخته‌شده هست و به آن‌ها رجوع می‌کند و دیگران را در بکارگیری بِه‌روش‌ها راهنمایی می‌کند.
               </li>
             </ul>
           </div>
@@ -737,15 +734,14 @@
           <a class="show link" id="teamlead-show" onclick="showExamples('teamlead')">+ نمایش مثال‌ها</a>
           <a class="hide link" id="teamlead-hide" onclick="hideExamples('teamlead')">- پنهان کردن مثال‌ها</a>
           <ul class="hide" id="teamlead-examples">
-            <li>Focuses the team on quality with regular reminders</li>
-            <li>Makes architectural decisions that align to the strategic vision</li>
-            <li>Set up monitoring to capture metrics, for the stability and maintability of a new feature in their
-              domain in production</li>
-            <li>Designed a technical strategy for migration of legacy data considering implications where this data is
-              used across systems</li>
-            <li>Designed complex project that covered a holistic technical solution which encompassed multiple systems
-              and technologies</li>
-            <li>Ran a workshop demonstrating how to use a new tool</li>
+            <li>با کمکِ یکسری یادآوری‌های منظم، تیم را روی کیفیت متمرکز می‌کند.</li>
+            <li>تصمیماتِ مربوط به معماری را مطابق چشم اندازِ استراتژیک می‌گیرد.</li>
+            <li>منظور پایداری و نگهداریِ ویژگی‌های عملیاتی، سیستم مانیتورینگ برپا می‌کند که متریک‌ها را ضبط کند.</li>
+            <li>یک استراتژیِ فنی برای مهاجرتِ داده‌های قدیمی با درنظرگرفتنِ پیامدهای این عمل در سطح تمام سیستم، طراحی
+              می‌کند.</li>
+            <li>پروژه‌ی پیچیده‌ای را طراحی می‌کند که راه‌حل جامعی را پوشش می‌دهد که در آن از سیستم‌ها و فناوری‌های
+              متعددی استفاده شده است.</li>
+            <li>برای نشان داده نحوه استفاده از یک ابزار جدید کارگاه برگزار می‌کند.</li>
           </ul>
         </div>
 
@@ -756,7 +752,7 @@
 
         <div class="left col">
           <span class=title>E5: مدیر مهندسی</span>
-          <p><span class=focus>FOCUS: <br />Across Several Teams</span></p>
+          <p><span class=focus>تمرکز: <br />در سطح چندین تیم</span></p>
           <a href="https://tinyurl.com/e360-eng-mgr" target="_blank" class="link underline">انتظارات از این نقش</a>
         </div>
         <div class="middle" id="em-skills">
@@ -765,24 +761,24 @@
             <ul>
               <li>
                 <span class="highlight underline"> امنیت (security)</span><br />
-                Actively works with the security lead/team, as well as <span class="highlight">across several
-                  teams</span>, to apply the organisation's security strategy. Fosters a security first mindset <span
-                  class="highlight">across those teams</span>, leading by example.
+                بصورت فعالانه با مدیر امنیت و تیم امنیت در تعامل است و همچین در چندین تیم برای اعمالِ استراتژیِ امنیتیِ
+                سازمان کار می‌کند. ذهنیتِ اول امنیت (security first) را با کار عملی در این تیم‌ها تقویت می‌کند.
               </li>
               <li>
                 <span class="highlight underline"> سیستم‌های توزیع‌شده (distributed systems)</span><br />
-                Has a holistic view on how the applications integrate across a few contexts. Has an understanding of
-                different slices of the technology stack and has a deep understanding of a few of these.
+                نگاهِ جامعی از چگونگی تعامل اپلیکیشن‌ها در چندین زمینه‌ی (context) مختلف دارد. بخش‌های متفاوتی از
+                تکنولوژی‌های استفاده شده را می‌شناسد و برخی از آن‌ها را عمیقا می‌داند.
                 <br />
-                <span class="highlight">Drives the teams</span> to <span class="highlight">factor in</span> data
-                consistency, availability and performance in production of features.
+                <span class="highlight">تیم را هدایت می‌کند که ویژگی‌های (features) عملیاتی مثل فاکتورهایی مثل یکدستی
+                  داده (data consistency)، دردسترس بودن (availability) و عملکرد (performance) را داشته باشند.
               </li>
               <li>
                 <span class="highlight underline"> مشاهده‌پذیری (observability) و قابل اطمینان‌سازی (Reliability)
                 </span>
                 <br />
-                <span class="highlight">Fosters a culture of observability across several teams and helps them use
-                  operational data to improve stability and performance of their domains.</span>
+                <span class="highlight">فرهنگِ observability را در سطحِ چندین تیم تقویت می‌کند و به این تیم‌ها کمک
+                  می‌کند تا بتوانند از داده‌های عملیاتی‌اشان به جهت ثبات و بهبودِ سرویس‌های حوزه‌ی خودشان استفاده
+                  کنند.</span>
               </li>
             </ul>
           </div>
@@ -792,16 +788,16 @@
             <ul>
               <li>
                 <span class="highlight underline"> اشکال‌زدایی (debugging)</span><br />
-                Proficient at using systematic debugging to diagnose all issues within <span class="highlight">a set of
-                  related domains.</span>
+                در استفاده از اشکال‌یابیِ سیستماتیک بمنظور تشخیصِ تمام مسائلِ مجموعه‌ای از حوزه‌های بهم مرتبط مهارت
+                دارد.</span>
               </li>
               <li>
                 <span class="highlight underline"> واکنش به حادثه (incident)</span><br />
-                Adept at using a range of tools to detect when there is an incident and raises this with stakeholders in
-                a timely manner.
-                <br />Takes ownership of incidents which fall in <span class="highlight">their teams.</span>
-                <br />Leads the resolution of an incident or provide assistance to others on resolving incidents.
-                <br />Understands issues in their domain and across domains
+                در استفاده از طیفِ وسیعی از ابزارها بجهت تشخیصِ زمان وقوع حادثه (incident) مهارت دارد و این موضوع را به
+                موقع به ذی‌نفعان اطلاع می‌دهد.
+                <br />مسئولیت و رهبریِ حوادثی را که در تیم‌هایش رخ می‌دهد را به عهده می‌گیرد.</span>
+                <br />حلِ یک حادثه را رهبری می‌کند و به دیگران در حل‌وفصلِ حوادث‌اشان کمک می‌کند.
+                <br />مسائل (issues) موجود در حوزه‌ی خود و دیگران را می‌شناسد.
               </li>
             </ul>
           </div>
@@ -825,12 +821,12 @@
               </li>
               <li>
                 <span class="highlight underline"> معماری نرم‌افزار (software architecture)</span><br />
-                Works <span class="highlight">with teams</span> to ensure architecture and technical approaches are
-                aligned to the broader engineering goals
-                (e.g. scaling or validation mode, continuous deployment etc)
-                <br /><span class="highlight">Contributes to and drives the architectural roadmap</span>
-                <br /><span class="highlight">Guides the team on knowing when to invest in tech or focus on delivery
-                  (appropriate ROI over strategic horizons)</span>
+                با تیم‌ها کار می‌کند تا این اطمینان حاصل شود که معماری و رویکردهای فنیِ تیم با اهدافِ مهندسی بزرگ‌تر
+                نظیر مقیاس‌پذیری (scaling)، حالت اعتبارسنجی (validation mode)، دیپلوی مداوم (continuous deployment) و
+                همچنین نقشه‌ی راهِ معماری، مطابق و همسو هستند.
+                <br /><span class="highlight">در تهیه‌ی نقشه‌ی راه (roadmap) مشارکت می‌کند و آن را هدایت می‌کند.</span>
+                <br /><span class="highlight">تیم را در دانستن زمان وقت‌گذاشتن یا سرمایه‌گذاری روی تکنولوژی و همچنین
+                  تمرکز روی تحویل (delivery) محصول راهنمایی می‌کند (ROI مناسب در افق‌های استراتژیک)</span>
               </li>
             </ul>
           </div>
@@ -854,20 +850,17 @@
               </li>
               <li>
                 <span class="highlight underline">تست کردن (testing)</span><br />
-                Understands and <span class="highlight">sets</span> the testing approach of <span
-                  class="highlight">several teams,</span> and uses quality metrics to identify gaps. <span
-                  class="highlight">Works with those teams</span> to recommend solutions that are in accordance with
-                accepted testing frameworks and the testing pyramid. <span class="highlight">Influences organisation
-                  wide testing strategy.</span>
+                روشِ تست‌نویسیِ را درک می‌کند و تببین می‌کند و از متریک‌های کیفی برای شناسایی گپ‌ها استفاده می‌کند. به
+                تیم‌هایی که با آن‌ها کار می‌کند راهِ‌حل‌هایی را توصیه می‌کند که مطابق با چهارچوب‌های تست‌کردن
+                پذیرفته‌شده و هرم تست‌کردن است. روی استراتژیِ تست‌کردن در سطح سازمان تاثیرگذار است.</span>
               </li>
               <li>
                 <span class="highlight underline"> بِه‌روش (best practice)</span><br />
-                Guides <span class="highlight">teams</span> on following standards and aims for best practice across
-                teams.
-                <br />Seeks and references guides and known standards, <span class="highlight">sets standards</span> and
-                guidelines and coaches others on applying best practice in their work.
-                <br /><span class="highlight">Drives accountability for reliability measures such as code coverage or
-                  defect rates</span>
+                تیم‌ها را برای پیروی از استانداردها و اعمالِ بِه‌روش‌ها در کار هدایت می‌کند. پیگیرِ راهنماها و
+                استانداردهای شناخته‌شده هست و به آن‌ها رجوع می‌کند، استانداردها و دستورالعمل‌هایی را تنظیم می‌کند و
+                دیگران را در بکارگیری بِه‌روش‌ها راهنمایی می‌کند.
+                <br /><span class="highlight">مسئولیت‌پذیری در قبال معیارهای اطمینان‌بخش مثل code coverage و نرخِ نقض
+                  (defect) ایجاد می‌کند.</span>
               </li>
             </ul>
           </div>
@@ -903,11 +896,10 @@
           <a class="show link" id="em-show" onclick="showExamples('em')">+ نمایش مثال‌ها</a>
           <a class="hide link" id="em-hide" onclick="hideExamples('em')">- پنهان کردن مثال‌ها</a>
           <ul class="hide" id="em-examples">
-            <li>Worked with teams to set a strategy for quality / best practices</li<li>
-            </li>
-            <li>Guides teams to consider cross dependencies in their projects</li>
-            <li>Facilitates or guides teams on technical design</li>
-            <li>Takes ownership of systems which noone owns or wants</li>
+            <li>با تیم به جهت تعیین استراتژی برای کیفیت و بِه‌روش‌ها کار می‌کند.</li>
+            <li>تیم را راهنمایی می‌کند که وابستگی‌های دوطرفه را در پروژه‌ها درنظر بگیرند.</li>
+            <li>تیم‌ها را در طراحیِ فنی تسهیل یا راهنمایی می‌کند.</li>
+            <li>مسئولیت سیستم‌هایی را کسی آن‌ها را گردن نمی‌گیرد را می‌پذیرد.</li>
           </ul>
         </div>
 
@@ -918,7 +910,7 @@
 
         <div class="left col">
           <span class=title>E6: معاونت فنی</span>
-          <p><span class=focus>FOCUS: <br />Across Organisation</span></p>
+          <p><span class=focus>تمرکز: <br />درسطح سازمان</span></p>
         </div>
         <div class="middle" id="vp-skills">
           <div class="reliable">
@@ -926,25 +918,24 @@
             <ul>
               <li>
                 <span class="highlight underline"> امنیت (security)</span><br />
-                Actively works with the security lead/team to <span class="highlight">set and refine organisation-wide
-                  security strategy.</span> Fosters a security first mindset <span class="highlight">across the
-                  organisation.</span>
-                <span class="highlight">Drives security awareness and culture across the organisation.</span>
+                بصورت فعالانه با مدیر امنیت و تیم امنیت بمنظور تبیین و اصلاح استراتژی امنیتی در سطح سازمان در تعامل است.
+                ذهنیتِ اول امنیت (security first) را در سطحِ سازمان تقویت می‌کند.
+                <span class="highlight">آگاهی و فرهنگِ امنیتی را در سراسر سازمان هدایت می‌کند.</span>
               </li>
               <li>
                 <span class="highlight underline"> سیستم‌های توزیع‌شده (distributed systems)</span><br />
-                Has a holistic view on the applications in the <span class="highlight">organisation.</span> Has an
-                understanding of different slices of the technology stack.
-                <span class="highlight">Drives engineering</span> to factor in data consistency, availability and
-                performance in production of features.
+                نگاهِ جامعی از چگونگی تعامل اپلیکیشن‌ها در سطح سازمان دارد. بخش‌های متفاوتی از تکنولوژی‌های استفاده شده
+                را می‌شناسد و برخی از آن‌ها را عمیقا می‌داند.
+                معاونتِ فنی را هدایت می‌کند که ویژگی‌های (features) عملیاتی مثل فاکتورهایی همچون یکدستی داده (data
+                consistency)، دردسترس بودن (availability) و عملکرد (performance) را داشته باشند.
+
               </li>
               <li>
                 <span class="highlight underline"> مشاهده‌پذیری (observability) و قابل اطمینان‌سازی (Reliability)
                 </span>
                 <br />
-                Fosters a culture of observability <span class="highlight">across the engineering organisation.</span>
-                Helps teams <span class="highlight">across the engineering organisation</span> use operational data to
-                improve stability and performance of their domains.
+                فرهنگِ observability را در سطحِ معاونتِ فنیِ سازمان تقویت می‌کند و به همه‌ی تیم‌های فنی سازمان کمک
+                می‌کند تا بتوانند از داده‌های عملیاتی‌اشان به جهت ثبات و بهبودِ سرویس‌های حوزه‌ی خودشان استفاده کنند.
               </li>
             </ul>
           </div>
@@ -954,15 +945,15 @@
             <ul>
               <li>
                 <span class="highlight underline"> اشکال‌زدایی (debugging)</span><br />
-                <span class="highlight">Coaches the engineering organisation on a debugging mindset, with a view of
-                  using the appropriate tool for specific needs</span>
+                <span class="highlight">ذهنیتِ اشکال‌یابی را در سطح معاونتِ سازمان هدایت می‌کند، با این نگاه که از ابزار
+                  مناسب برای هر نیاز استفاده شود.</span>
               </li>
               <li>
                 <span class="highlight underline"> واکنش به حادثه (incident)</span><br />
-                <span class="highlight">Leads incident response across the engineering organisation as needed.</span>
-                Uses systematic debugging to diagnose issues across the organisation.
-                <br /><span class="highlight">Selects and procures tools and establishes processes to support the team
-                  in effective troubleshooting.</span>
+                در صورتِ نیاز پاسخِ به حوادث را در سطح معاونتِ فنیِ سازمان مدیریت می‌کند. از اشکال‌یابیِ سیستماتیک برای
+                تشخیصِ مسائل در سطح سازمان استفاده می‌کند.
+                <br /><span class="highlight">بمنظور حمایت از تیم در جهتِ اشکال‌زداییِ موثر، ابزارهایی را انتخاب و تهیه
+                  می‌کند و همچنین فرایندهایی را ایجاد می‌کند.</span>
               </li>
             </ul>
           </div>
@@ -986,16 +977,15 @@
               </li>
               <li>
                 <span class="highlight underline"> معماری نرم‌افزار (software architecture)</span><br />
-                Works <span class="highlight">across the organisation</span> to foster a culture of architecture that
-                allows for iterative, autonomous development and future scaling. Guides teams in the <span
-                  class="highlight">organisation</span> in anticipation of future use cases and helps them make design
-                decisions that minimize the cost of future changes. <span class="highlight">Sets the direction of the
-                  architectural roadmap.</span>
-                <br />Determines the <span class="highlight">Return-on-Investment</span> for specific engineering
-                initiatives and determines <span class="highlight">appropriate levels of investment</span> for given
-                strategic horizons.
-                <br /><span class="highlight">Establishes engineering strategic objectives that drive architecture and
-                  technical approach</span>
+                تلاش می‌کند در سطح سازمان، فرهنگِ معماری‌ای را ترویج دهد که امکان iteration دارد، توسعه‌ی مستقل دارد و
+                در آینده قابلیت گسترش دارد و مقیاس‌پذیر است.
+                تیم‌های سازمان را برای نیازهای آینده‌ی سازمان راهنمایی می‌کند و به آن‌ها کمک می‌کند که تصمیماتی در طراحی
+                بگیرند که هزینه‌ی تغییراتِ آینده به حداقل برسد. سمت‌وسوی نقشه‌ی راه را مشخص می‌کند.
+
+                <br />مشخص می‌کند که روی کدام یک از نوآوری‌های دنیای فناوری سرمایه‌گذاری شود تا بازدهی مناسب داشته باشد
+                و همچنین سطوح سرمایه‌گذاری مناسب را هم برای افق‌های استراتژیکی تعیین می‌کند.
+                <br /><span class="highlight">اهداف استراتژیک مهندسی را ایجاد می‌کند که معماری و رویکردِ فنی را هدایت
+                  می‌کند.</span>
               </li>
             </ul>
           </div>
@@ -1015,14 +1005,13 @@
               </li>
               <li>
                 <span class="highlight underline">تست کردن (testing)</span><br />
-                <span class="highlight"> Drives the organisational testing strategy</span>, and uses quality metrics to
-                identify gaps. Works with <span class="highlight">all teams</span> to recommend solutions that are in
-                accordance with accepted testing frameworks and the testing pyramid.
+                استراتژیِ تست‌نویسیِ سازمان را تببین می‌کند و از متریک‌های کیفی برای شناسایی گپ‌ها استفاده می‌کند. به
+                تمام تیم‌های سازمان راهِ‌حل‌هایی را توصیه می‌کند که مطابق با چهارچوب‌های تست‌کردن پذیرفته‌شده و هرم
+                تست‌کردن است.
               </li>
               <li>
                 <span class="highlight underline"> بِه‌روش (best practice)</span><br />
-                <span class="highlight">Champions</span> and guides teams on following standards and aims for best
-                practice across the organisation.
+                تیم‌ها را در پیروی از استانداردها راهنمایی و حمایت می‌کند و هدف‌اش اعمالِ بِه‌روش‌ها در سطح سازمان است.
               </li>
             </ul>
           </div>
@@ -1059,8 +1048,8 @@
           <a class="show link" id="vp-show" onclick="showExamples('vp')">+ نمایش مثال‌ها</a>
           <a class="hide link" id="vp-hide" onclick="hideExamples('vp')">- پنهان کردن مثال‌ها</a>
           <ul class="hide" id="vp-examples">
-            <li>Defines policies for the engineering org that encourage quality work</li>
-            <li>Makes decisions that have positive, long term, wide ranging consequences</li>
+            <li>سیاست‌هایی در سطح معاونتِ فنی تنظیم می‌کند که روحیه‌ی کار با کیفیت را تقویت ‌می‌کند.</li>
+            <li>تصمیماتی را می‌گیرد که در بلند مدت عواقب مثبت داشته باشد.</li>
           </ul>
         </div>
 
